@@ -1,0 +1,89 @@
+description for the used method below:
+
+I used the Ensemble deep learning method two models for each Dataset
+
+1- DBN + RBM (I tried to use DBN instead of CNN with LSTM and BiLstm but it did not work with me since the DBN is a collection of RBM)
+
+2- CNN +LSTM +BiLstm  
+
+requirement:
+
+Dataset:
+
+1- NSL-KDD
+
+https://www.kaggle.com/datasets/hassan06/nslkdd
+
+2- cicddos2019
+
+https://www.kaggle.com/datasets/dhoogla/cicddos2019
+
+
+
+==> the packages:
+
+for the DBN (KDD dataset)
+
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder, StandardScaler, LabelBinarizer
+import tensorflow as tf
+import numpy as np
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.layers import LSTM, Bidirectional, Dense, Dropout
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+
+
+For CIC dataset with DBN:
+
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder, StandardScaler, LabelBinarizer
+import tensorflow as tf
+import numpy as np
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.layers import LSTM, Bidirectional, Dense, Dropout
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+
+
+for CNN model with KDD dataset:
+
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.preprocessing import LabelBinarizer
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Bidirectional, Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten
+from sklearn.metrics import classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+
+
+for CNN model with CIC dataset:
+
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.preprocessing import LabelBinarizer
+import tensorflow as tf
+import numpy as np
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Bidirectional, Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from sklearn.model_selection import train_test_split
+from tensorflow.keras.layers import Conv1D, MaxPooling1D, Flatten
+from sklearn.metrics import classification_report, confusion_matrix
+import matplotlib.pyplot as plt
+
+
+
+
+
