@@ -12,11 +12,10 @@ Dataset:
 
 1- NSL-KDD
 
-https://www.kaggle.com/datasets/hassan06/nslkdd
+
 
 2- cicddos2019
 
-https://www.kaggle.com/datasets/dhoogla/cicddos2019
 
 
 
